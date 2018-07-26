@@ -10,31 +10,43 @@
 // Try to edit some of the values below to see your theme change.
 // A good start is to change the color of the `@base-background-color` variable.
 
+// Style Colors
+@Blue-Turned-Off:rgba(108, 222, 241, 0.5);
+@Light-Orange:rgba(255, 241, 185, 1);
+@Yellow:rgba(255, 255, 0, 1);
+@Orange:rgba(246, 135, 54, 1);
+@Light-Blue:rgba(229, 229, 255, 1);
+@Green:rgba(0, 255, 0, 1);
+@Blue: rgba(0, 255, 255, 1);
+@Purple: rgba(169, 70, 185, 1);
+@Pink:rgba(255, 1, 170, 1);
+@Red:rgba(255, 0, 0, 1);
+
 
 // Text Colors
-@text-color:           hsl(0,0%,66%);
-@text-color-subtle:    hsl(0,0%,50%);
-@text-color-highlight: hsl(0,0%,94%);
-@text-color-selected:  hsl(0,0%,100%);
+@text-color:           @Blue;
+@text-color-subtle:    @Blue-Turned-Off;
+@text-color-highlight: @Green;
+@text-color-selected:  @Pink;
 
-@text-color-info:    hsl(219,  79%, 66%);
-@text-color-success: hsl(140,  44%, 62%);
-@text-color-warning: hsl( 36,  60%, 72%);
-@text-color-error:   hsl(  9, 100%, 64%);
+@text-color-info:    @Light-Blue;
+@text-color-success: @Green;
+@text-color-warning: @Yellow;
+@text-color-error:   @Red;
 
 // Background colors
-@background-color-info:    hsl(208, 100%, 50%);
-@background-color-success: hsl(160,  70%, 36%);
-@background-color-warning: hsl(32,   60%, 50%);
-@background-color-error:   hsl(0,    70%, 50%);
+@background-color-info:    darken(@Blue, 30%);
+@background-color-success: darken(@Green, 30%);
+@background-color-warning: darken(@Yellow, 30%);
+@background-color-error:   darken(@Red, 30%);
 
 @background-color-highlight: lighten(@base-background-color, 5%);
 @background-color-selected:  lighten(@base-background-color, 10%);
 @app-background-color:       darken(@base-background-color, 5%);
 
 // Base colors
-@base-background-color: hsl(222,6%,22%);
-@base-border-color:     darken(@base-background-color, 8%);
+@base-background-color: #020A12;
+@base-border-color:     @Blue;
 
 // Component colors
 @pane-item-background-color: @base-background-color;
@@ -62,19 +74,19 @@
 
 @tab-bar-background-color:    @base-background-color;
 @tab-bar-border-color:        @base-border-color;
-@tab-background-color:        @tab-bar-background-color;
-@tab-background-color-active: lighten(@tab-bar-background-color, 10%);
+@tab-background-color:        @Blue-Turned-Off;
+@tab-background-color-active: darken(@Pink,30%);
 @tab-border-color:            @base-border-color;
 
 @tree-view-background-color: @base-background-color;
 @tree-view-border-color:     @base-border-color;
 
 // Site colors
-@ui-site-color-1: hsl(208, 100%, 50%); // blue
-@ui-site-color-2: hsl(160,  70%, 42%); // green
-@ui-site-color-3: hsl(32,   60%, 50%); // orange
-@ui-site-color-4: #D831B0;             // pink
-@ui-site-color-5: #EBDD5B;             // yellow
+@ui-site-color-1: @Blue // blue
+@ui-site-color-2: @Green; // green
+@ui-site-color-3: @Orange; // orange
+@ui-site-color-4: @Pink;// pink
+@ui-site-color-5: @Yellow;// yellow
 
 // Sizes
 @font-size: 12px;
