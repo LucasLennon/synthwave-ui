@@ -1,13 +1,13 @@
 {
   "name": "synthwave-ui",
   "theme": "ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Synthwave theme, still on progress",
   "keywords": [
     "ui",
     "theme"
   ],
-  "repository": "https://github.com/atom-community/synthwave-ui",
+  "repository": "https://github.com/LucasLennon/synthwave-ui",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
