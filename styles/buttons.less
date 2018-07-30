@@ -7,19 +7,29 @@
 
 .btn {
   color: lighten(@text-color, 6%);
-  background-color: @button-background-color;
+  background-color: darken(@text-color, 30%);
+  box-shadow: 0 0 10px @text-color;
+
   &:hover,
   &:focus {
     color: @text-color-highlight;
-    background-color: @button-background-color-hover;
+    background-color: darken(@text-color-highlight, 20%);
+    box-shadow: 0 0 10px @text-color-highlight;
   }
   &:active {
-    color: fade(@text-color-selected, 66%);
-    background-color: darken(@button-background-color, 2%);
+    color: lighter(@text-color-selected, 66%);
+    background-color: darken(@text-color-selected, 30%);
+    box-shadow: 0 0 10px @text-color-selected;
   }
   &.selected {
     color: @text-color-selected;
-    background-color: @button-background-color-selected;
+    background-color: darken(@text-color-selected, 30%);
+    box-shadow: 0 0 10px @text-color-selected;
+    &:hover{
+      color: @text-color-highlight;
+      background-color: darken(@text-color-highlight, 20%);
+      box-shadow: 0 0 10px @text-color-highlight;
+    }
   }
   &:focus,
   &:focus:active {
